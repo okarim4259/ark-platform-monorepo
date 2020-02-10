@@ -1,0 +1,18 @@
+version: "3"
+services:
+    webapp:
+        build:
+            dockerfile: Dockerfile
+            context: ./webapp
+        volumes:
+            - /app/node_modules
+            - ./webapp:/app
+    nginx:
+        restart: always
+        build:
+            dockerfile: Dockerfile
+            context: ./nginx
+        links:
+            - webapp
+        ports:
+            - "8080:80"
