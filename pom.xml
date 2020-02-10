@@ -24,5 +24,6 @@
     <module>ark-platform-events-api</module>
     <module>ark-platform-auth-api</module>
     <module>ark-platform-webapp</module>
+    <module>ark-platform-mobile</module>
   </modules>
 </project>
