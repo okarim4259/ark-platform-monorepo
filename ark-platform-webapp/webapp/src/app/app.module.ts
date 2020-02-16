@@ -8,6 +8,7 @@ import { HeaderNavbarComponent } from "./shared/navigation/header-navbar/header-
 import { FooterComponent } from "./shared/navigation/footer/footer.component";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent, HeaderNavbarComponent, FooterComponent],
@@ -15,6 +16,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     BrowserModule,
     BrowserAnimationsModule,
     UiLibModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

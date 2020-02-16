@@ -12,6 +12,11 @@ const routes: Routes = [
     loadChildren: "./features/dashboard/dashboard.module#DashboardModule"
   },
   {
+    path: "create-event",
+    loadChildren:
+      "./features/events/create-event/create-event.module#CreateEventModule"
+  },
+  {
     path: "",
     redirectTo: "home",
     pathMatch: "full"
